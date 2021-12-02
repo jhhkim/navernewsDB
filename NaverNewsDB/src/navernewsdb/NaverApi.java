@@ -18,7 +18,7 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import comn.Util;
-
+import comn.Util2;
 import dto.NaverDto;
 
 public class NaverApi {
@@ -38,7 +38,7 @@ public class NaverApi {
 	}
 
 	public static String naverSrc(String str, String str2) {
-		String[] code = Util.readLineFile("C:/dev/네이버API_시크릿코드.txt").split("\\n");
+		String[] code = Util.readLineFile(Util2.NAVER_CI_FILE).split("\\n");
 //		String[] cArr = code.split("\\n");
 
 		String clientId = code[0]; // 애플리케이션 클라이언트 아이디값"
